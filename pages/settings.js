@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Layout from '../components/layout'
 
 const MyComponent = () => (
     <Image
@@ -13,7 +14,7 @@ const MyComponent = () => (
 
 function Settings(){
     return(
-        <>
+        <Layout>
             <h1>
                 Settings
             </h1>
@@ -25,7 +26,7 @@ function Settings(){
             <div className={styles.profil}>
                 <MyComponent/>
             </div>
-        </>
+        </Layout>
     )
 }
 
