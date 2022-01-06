@@ -20,11 +20,13 @@ function Home() {
         <h1 className={styles.title}>
           ToDoList App
         </h1>
+        <Layout>
         <h1 className={styles.title}>
           <Link href="/settings">
             <a>Go to settings</a>
           </Link>
         </h1>
+        </Layout>
         <div className={`${styles.addButton} ${styles.mainButton}`}>
         </div>
         <div className={styles.todolist}>
