@@ -14,12 +14,10 @@ const MyComponent = () => (
 
 function Settings(){
     return(
-        <>
-            <Layout>
-                <h1>
-                    Settings
-                </h1>
-            </Layout>
+        <Layout>
+            <h1>
+                Settings
+            </h1>
             <h2 className={styles.title}>
                 <Link href='/home'>
                     <a>Back to home</a>
@@ -28,7 +26,7 @@ function Settings(){
             <div className={styles.profil}>
                 <MyComponent/>
             </div>
-        </>
+        </Layout>
     )
 }
 

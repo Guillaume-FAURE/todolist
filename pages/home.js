@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Task from '../components/task'
 
 
 
@@ -20,13 +20,11 @@ function Home() {
         <h1 className={styles.title}>
           ToDoList App
         </h1>
-        <Layout>
         <h1 className={styles.title}>
           <Link href="/settings">
             <a>Go to settings</a>
           </Link>
         </h1>
-        </Layout>
         <div className={`${styles.addButton} ${styles.mainButton}`}>
         </div>
         <div className={styles.todolist}>
@@ -58,6 +56,12 @@ function Home() {
             </p>
           </a>
         </div>
+        <Task>
+          <Task></Task>
+          <Task>
+            <Task></Task>  
+          </Task>
+        </Task>
       </main>
       <footer className={styles.footer}>
       </footer>
